@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		:root {
+			--color-one: #7928CA;
+			--color-two: #FF0080;
+			--color-three:#1F85DE;
+			--color-four:#de8c1f;
+		}
+
+		body {
+			background-color: rgb(4, 4, 26);
+			width: 100%;
+			height: 100vh;
+			font-size: 2.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		body h1 {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+			animation: runningColor 10s infinite ease-out;
+			background-size: 300%;
+			/* background-position: -100px; */
+			background-image: linear-gradient(90deg,
+					var(--color-one),
+					var(--color-two),
+					var(--color-three),
+					var(--color-four),
+					var(--color-one));
+		}
+
+		@keyframes runningColor {
+			0% {
+				background-position: 0%;
+			}
+
+			50% {
+				background-position: 200%;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Create. Post. Sleep. Repeat. </h1>
+</body>
+
+</html>
